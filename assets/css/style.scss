@@ -1,0 +1,280 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Exo', sans-serif;
+    overflow-x: hidden;
+    
+    nav{
+        height: 100px;
+        background-color:#fff;
+        -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.48);
+        -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.48);
+        box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.48);
+    }
+}
+
+#search{
+    background-color: #f4f4f4;
+    border-color: #f4f4f4;
+    width: 700px;
+    border-radius: 10px;
+}
+
+.nav-link{
+    color: #6F6A6A;
+    font-size: 1.5rem;
+
+    &:hover{
+        color: #000;
+    }
+}
+
+.navbar-brand {
+    color: #6F6A6A;
+    text-decoration: underline;
+    font-size: 1.8rem;
+
+    &:hover{
+        color: #000;
+    }
+}
+
+.container-custom{
+    padding: 0 5rem;
+}
+
+.banner{
+    img{
+        width: inherit;
+        border: 5px solid #E8E8E8;
+        border-radius: 15px;
+    }
+}
+
+#btn-custom{
+    background-color: #F9BE0B;
+    padding: 20px 100px;
+    border-radius: 50px;
+    font-weight: bolder;
+}
+
+#btn-custom-1{
+    background-color: #F9BE0B;
+    padding: 6px 30px;
+    border-radius: 50px;
+    font-weight: bolder;
+}
+
+#btn-custom-2{
+    background-color: #F2C94C;
+    padding: 6px 30px;
+    border-radius: 50px;
+    font-weight: bolder;
+}
+
+#btn-200{
+    width: 200px;
+    height: 200px
+}
+
+.card{
+    .card-body{
+        .title{
+            font-size: 1rem;
+            font-weight: bold;
+        }
+    }
+}
+
+.card-custom{
+    border: 1px solid rgba(0,0,0,.125);
+    padding: 5px;
+
+    .list-group, .list-group-item{
+        border: unset;
+        font-size: 1.2rem;
+    }
+
+    .list-group-item a{
+        color: #000;
+        font-weight: lighter;
+    }
+}
+
+.card-img-top img{
+    width: inherit;
+}
+
+.hr-mobile{
+    visibility: hidden;
+}
+
+.kategori{
+    width: 100%;
+
+    img{
+        width: inherit;
+    }
+}
+
+.container-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+}
+
+.drawkit{
+    position: absolute;   
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(10%,-50%);
+    width: 500px;
+}
+
+.plant{
+    position: absolute;
+    z-index: -2;
+    top: 75%;
+    left: -20%;
+    transform: translate(-80%,50%);
+    width: 80px;
+}
+
+.plant-2{
+    position: absolute;
+    z-index: -2;
+    top: 65%;
+    left: -20%;
+    transform: translate(-80%,50%);
+    width: 80px;
+}
+
+.btn-cs-1{
+    background-color: #ca2c68;
+}
+
+.btn-cs-2{
+    background-color: #0287d0;
+}
+
+.btn-cs-3{
+    background-color: #f39c12;
+}
+
+.btn-cs-4{
+    background-color: #0eac51;
+}
+
+.btn-cs-5{
+    background-color: #E74C3C;
+}
+
+.btn-cs-6{
+    background-color: #870000;
+}
+
+
+
+
+@media (max-width: 768px) {
+    body{
+        nav{
+            height: 70px;
+            background-color:#fff;
+            -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.48);
+            -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.48);
+            box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.48);
+
+            .container{
+                a{
+                    position: relative;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+    }
+
+    .arrival{
+        margin-top: 20px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+
+        button{
+            padding: 2px 8px;
+            font-size: 1rem;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        img{
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-bottom: 15px;
+        }
+
+        p{
+            text-align: justify;
+        }
+    }
+
+    .card-custom{
+        visibility: hidden;
+    }
+
+    #search{
+        visibility: hidden;
+    }
+
+    .navbar-nav{
+        visibility: hidden;
+    }
+
+    .banner-promo{
+        visibility: hidden;
+    }
+
+    .card-img-top img{
+        width: inherit;
+        border-radius: 10px;
+    }
+
+    .hr-mobile{
+        visibility: visible;
+    }
+
+    .hide{
+        visibility: collapse;
+        height: 0;
+    }
+
+    .drawkit{
+        visibility: hidden;
+    }
+    
+    .plant{
+        position: absolute;
+        z-index: -2;
+        top: 50%;
+        left: 80%;
+        transform: translate(60%,90%);
+        width: 80px;
+    }
+
+    .plant-2{
+        position: absolute;
+        z-index: -2;
+        top: 50%;
+        left: 80%;
+        transform: translate(60%,90%);
+        width: 80px;
+    }
+
+}
